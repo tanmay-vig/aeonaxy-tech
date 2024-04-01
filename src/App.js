@@ -1,11 +1,8 @@
-import DemoComponent from "./DemoComponent";
-
-
 function App() {
   return (
-    <div>
-   <DemoComponent />
-    </div>
+    <>
+      <div className="">Will start development here </div>
+    </>
   );
 }
 
