@@ -1,17 +1,22 @@
 import React from "react";
+
+// Importing Components here
+import Header from "./components/Header";
 import Sidebar from "./components/Sidebar";
+// import Content from "./components/Content";
 
 const App = () => {
   return (
-    <div className="flex">
+    <>
+      {/* Header  */}
+      <Header />
+      {/* Sidebar */}
       <Sidebar />
-      <div className="p-4">
-        <h1 className="text-2xl font-bold mb-4">Welcome to My App!</h1>
-        <p className="text-gray-700">
-          This is a simple example of a React app with a sidebar, using Tailwind CSS for styling.
-        </p>
-      </div>
-    </div>
+
+      {/* Main Content */}
+
+      {/* <Content /> */}
+    </>
   );
 };
 
