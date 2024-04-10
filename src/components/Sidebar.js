@@ -32,7 +32,7 @@ const Sidebar = () => {
       </div>
       {/* Second Div */}
       <div className="flex">
-        <div className=" bg-white p-2 flex">
+        <div className=" bg-white p-2 flex text-gray-500">
           {" "}
           <div>
             <FaHandPaper />
