@@ -26,6 +26,10 @@ const Sidebar = () => {
           <FaRegBell />{" "}
         </div>
       </div>
+      <div>
+        <div>Your team used 8/50 free docs</div>
+        <div>Upgrade to create unlimited docs</div>
+      </div>
       {/* Second Div */}
       <div className="flex">
         <div className=" bg-white p-2 flex">
