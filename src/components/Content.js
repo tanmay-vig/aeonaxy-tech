@@ -15,53 +15,55 @@ import { RiChat3Line } from "react-icons/ri"; // Chat icon
 import { TiStarFullOutline } from "react-icons/ti"; // Star icon
 import { SlOptionsVertical } from "react-icons/sl"; // Options icon
 
-
 export default function Content() {
   return (
+    // Root div
     <div>
+      {/* Header of main content */}
       <div className="flex">
-        <div className="flex">
-          <div>
+
+        <div className="flex basis-4/5 mt-3 items-center">
+          <div className=" ml-3 mr-3">
             <MdOutlineSpaceDashboard />
           </div>
-          <div>
+          <div className=" mr-3">
             <MdArrowBackIos />
           </div>
-          <div>
+          <div className=" mr-3">
             <MdArrowForwardIos />
           </div>
-          <div>
-            < FaLock />
+          <div className=" mr-3">
+            <FaLock />
           </div>
-          <div>
-            My Private Channel /
-          </div>
+          <div className=" mr-3">My Private Channel /</div>
           <div>
             <PiHandWaving />
           </div>
-          <div>
-            Getting Started
-          </div>
+          <div className=" mr-3">Getting Started</div>
         </div>
-        <div className="flex">
-          <div>Share </div>
-          <div>
+        <div className="flex basis-1/5 mt-3 items-center">
+          <div className=" mr-5">Share </div>
+          <div className=" mr-5">
             <RiChat3Line />
           </div>
-          <div>
+          <div className=" mr-5">
             <TiStarFullOutline />
           </div>
-          <div>
+          <div className=" mr-5">
             <SlOptionsVertical />
           </div>
         </div>
       </div>
       {/* Main content */}
+
       <div className="flex">
-        <div>
+        <div className=" basis-13/15">
           <div>Getting Started</div>
-          <div className="flex">
+          <div className="flex items-start">
+            <div className="mt-1">
+
             <FaLock />
+            </div>
             <div>
               This doc in your private channel, where you can store your private
               work. You can share docs one by one from here, but to properly
@@ -73,7 +75,7 @@ export default function Content() {
             </div>
           </div>
           <div>Collaborate with your team with these three features.</div>
-          <div className="flex">
+          <div className="flex items-center">
             <FaUserPen />
 
             <div>Docs</div>
@@ -81,7 +83,7 @@ export default function Content() {
           <div>
             <img src={docs} alt="docs" />
           </div>
-          <div className="flex">
+          <div className="flex items-center">
             <IoBulbOutline />
 
             <div>Give it a go by typing / below</div>
@@ -89,7 +91,7 @@ export default function Content() {
         </div>
 
         {/* Theme and FAQ  */}
-        <div>
+        <div className=" basis-2/15 mr-3">
           <div>
             <IoMoonOutline />
           </div>
@@ -98,6 +100,7 @@ export default function Content() {
           </div>
         </div>
       </div>
+      {/* Root Div closed here  */}
     </div>
   );
 }
