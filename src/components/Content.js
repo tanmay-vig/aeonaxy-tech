@@ -94,11 +94,11 @@ export default function Content() {
         </div>
 
         {/* Theme and FAQ  */}
-        <div className=" basis-2/15 mr-5 items-end content-end mb-5">
+        <div className=" basis-2/15 mr-5 content-end mb-5 ">
           <div>
             <IoMoonOutline />
           </div>
-          <div>
+          <div className="mt-3">
             <MdQuestionMark />
           </div>
         </div>
